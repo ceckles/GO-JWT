@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "9775d358-90f7-4877-9e86-3b672893e497",
+		"name": "JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10933142"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"First_name\": \"Chad\",\r\n    \"Last_name\": \"Eckles\",\r\n    \"Password\": \"1234567890\",\r\n    \"Email\": \"chad1020@gmail.com\",\r\n    \"Phone\": \"1234567890\",\r\n    \"User_type\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"chad1020@gmail.com\",\r\n    \"Password\":\"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Admin GET Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxMDIwQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJDaGFkIiwiTGFzdF9uYW1lIjoiRWNrbGVzIiwiVWlkIjoiNjNjMWUxYmZhZDRmNzIzOTRiM2RlMTNlIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2NzM3MzcyMTF9.vaF4DGtl_XW7DGW9CSpcB8XdD2pSOOAv_P6d8JO1fXI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth GET User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxMDIwQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJDaGFkIiwiTGFzdF9uYW1lIjoiRWNrbGVzIiwiVWlkIjoiNjNjMWUxYmZhZDRmNzIzOTRiM2RlMTNlIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2NzM3MzcyMTF9.vaF4DGtl_XW7DGW9CSpcB8XdD2pSOOAv_P6d8JO1fXI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/users/63c1e1bfad4f72394b3de13e",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"63c1e1bfad4f72394b3de13e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
