@@ -69,7 +69,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxMDIwQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJDaGFkIiwiTGFzdF9uYW1lIjoiRWNrbGVzIiwiVWlkIjoiNjNjMWUxYmZhZDRmNzIzOTRiM2RlMTNlIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2NzM3MzcyMTF9.vaF4DGtl_XW7DGW9CSpcB8XdD2pSOOAv_P6d8JO1fXI",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxQHRlc3QuY29tIiwiRmlyc3RfbmFtZSI6IkNoYWQiLCJMYXN0X25hbWUiOiJFY2tsZXMiLCJVaWQiOiI2M2MxZjExYzg4YjNkMWMwZmJkNjBlNWMiLCJVc2VyX3R5cGUiOiJBRE1JTiIsImV4cCI6MTY3Mzc0MDk2M30.8WkXc0ktpWl-booH6Xc_VwzBR3UrL6yrWCX_uo_XOrY",
 						"type": "text"
 					}
 				],
@@ -87,25 +87,25 @@
 			"response": []
 		},
 		{
-			"name": "Auth GET User",
+			"name": "Auth Admin GET User",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxMDIwQGdtYWlsLmNvbSIsIkZpcnN0X25hbWUiOiJDaGFkIiwiTGFzdF9uYW1lIjoiRWNrbGVzIiwiVWlkIjoiNjNjMWUxYmZhZDRmNzIzOTRiM2RlMTNlIiwiVXNlcl90eXBlIjoiQURNSU4iLCJleHAiOjE2NzM3MzcyMTF9.vaF4DGtl_XW7DGW9CSpcB8XdD2pSOOAv_P6d8JO1fXI",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNoYWQxQHRlc3QuY29tIiwiRmlyc3RfbmFtZSI6IkNoYWQiLCJMYXN0X25hbWUiOiJFY2tsZXMiLCJVaWQiOiI2M2MxZWIzZjY0Y2M2OTc1ZWIwMDhhNjAiLCJVc2VyX3R5cGUiOiJBRE1JTiIsImV4cCI6MTY3MzczOTQ5OH0.aeZxn18jWWwkOlqXnI_PvVpe7a953ucT44Gt1V3QqIc",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "localhost:9000/users/63c1e1bfad4f72394b3de13e",
+					"raw": "localhost:9000/users/63c1e93064cc6975eb008a5e",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
 						"users",
-						"63c1e1bfad4f72394b3de13e"
+						"63c1e93064cc6975eb008a5e"
 					]
 				}
 			},
